@@ -13,6 +13,15 @@ var Question_1 = require('../models/Question');
 var PollCard = (function () {
     function PollCard() {
     }
+    PollCard.prototype.ngOnInit = function () {
+        this.imageRatio = 0.625;
+    };
+    PollCard.prototype.ngAfterViewInit = function () {
+        var width = document.querySelector(".card").offsetWidth;
+        console.log("width: " + width);
+        this.height = width * this.imageRatio;
+        console.log("height: " + this.height);
+    };
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Question_1.Question)

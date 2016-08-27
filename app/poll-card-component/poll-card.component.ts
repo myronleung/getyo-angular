@@ -17,4 +17,16 @@ export class PollCard{
   // author = "First Last";
   // votes = 15;
   // comments= 38;
+  imageRatio
+  height
+
+  ngOnInit(){
+    this.imageRatio = 0.625;
+  }
+  ngAfterViewInit(){
+     var width = document.querySelector(".card").offsetWidth
+     console.log("width: "+width);
+     this.height = width*this.imageRatio
+     console.log("height: "+this.height)
+  }
 }
