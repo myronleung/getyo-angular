@@ -1,0 +1,30 @@
+.tab {
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: rgba(0,0,0,.1);
+  font-weight: 800;
+  width: 50%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.tab > a{
+  color: #2c3e50;
+  margin: 0px;
+}
+.active{
+  background-color: #FBF9F9;
+}
+.active > a {
+  color: #9b59b6;
+}
+.brick{width:25%;}
+@media only screen and (min-width:769){
+  .brick{width:25%}
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .brick{width:33%}
+}
+@media only screen and (max-width:480px){
+  .brick{width:100%}
+}
+

@@ -1,0 +1,27 @@
+<div class="grid-item" style="padding:5px;">
+  <div class="card">
+    <!-- Question Image -->
+    <img src="img/Uber-Puppies.jpg" class="image">
+    <div class="card-content">
+      <!-- Question Title -->
+      <p class="amethyst-text title">{{pollCard.question_text}}</p>
+      <!-- Question Details -->
+      <img src="img/stock_pic.jpg" class="img-circle left" width="36px" height="36px"/>
+      <div class="left card-details">
+        <p class="card-author">{{pollCard.author_name}}</p>
+        <p class="card-date">{{pollCard.pub_date}}</p>
+      </div><br>
+      <hr>
+    </div>
+    <div class="card-action">
+      <!-- Bottom Icons -->
+      <div class="silver-text qdet-wrapper"> 
+        <p class="left qdet">{{pollCard.total_votes}} <span class="fui-check-circle"></span></p>
+        <p class="left qdet">{{pollCard.total_comments}} <span class="fui-chat"></span></p>
+      </div>
+      <div class="vote-btn right">
+        <a href="##">Vote</a>
+      </div>
+    </div>
+  </div>
+</div>

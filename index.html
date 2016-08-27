@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GetYO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="../css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="../css/flat-ui.min.css" rel="stylesheet">
+
+    <!-- GetYO css styles -->
+    <link rel="stylesheet" href="css/getyo-master.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    
+    <!-- Angular dependencies -->
+    <!-- Load Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+      <!--[if lt IE 9]>
+        <script src="js/vendor/html5shiv.js"></script>
+        <script src="js/vendor/respond.min.js"></script>
+      <![endif]-->
+
+  </head>
+  <body>
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <script src="../js/vendor/jquery.min.js"></script>
+
+
+    <app>
+      <div class="spinner"></div>
+      <div class="center-text orange-text fw3">Loading GetYO...</div>
+    </app>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/vendor/video.js"></script>
+    <script src="../js/flat-ui.min.js"></script>
+    <!--configure masonry (masonry)-->
+  </body>
+</html>

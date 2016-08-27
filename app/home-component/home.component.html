@@ -1,0 +1,16 @@
+<br>
+<!--<ul class="nav nav-tabs" style="padding-left: 20px;">
+  <li class="tab active col-lg-6 center-text"><a class="" style="background-color: #FBF9F9;" href="#">Recent Polls</a></li>
+  <li class="tab col-lg-6 center-text"><a href="#">Trending Polls</a></li>
+</ul>-->
+<br>
+<div class="container-fluid">
+  <masonry [options]="{ percentPosition: true }">
+    <div class="row">
+      <masonry-brick *ngFor="let question of questions" class="brick">
+        <poll-card [pollCard]="question"></poll-card>
+      </masonry-brick>
+    </div>
+  </masonry>
+</div>
+

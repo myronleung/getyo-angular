@@ -1,0 +1,35 @@
+<nav class="nav amethyst-bk">
+
+  <!-- navbar for desktop -->
+  <div class="full-nav">
+    <div class="brand"><a href="#">GetYO</a></div>
+    <div class="nav-search">
+      <span class="fui-search left"></span>
+      <input class="fw3" placeholder="Search GetYO">
+    </div>
+    <ul class="nav-wrapper">
+      <li class="right"><a href="#">Log Out</a></li>
+      <li class="right"><a href="#">FirstName</a></li>
+      <li class="right"><a href="#"><span class="fui-chat"></span></a></li>
+      <li class="right"><a href="#"><span class="fui-heart"></span></a></li>
+      <li class="right"><a href="#"><i class="material-icons">group</i></a></li>
+      <li class="right"><a href="#"><span class="fui-new"></span></a></li>
+    </ul>
+  </div>
+
+  <!-- ToDo -->
+  <!-- navbar for mobile -->
+  <div class="m-nav">
+    <div class="hamburger left fui-list" (click)="toggleSidebar(isToggled)"></div>
+    <div class="m-brand"><a href="#">GetYO</a></div>
+  </div>
+</nav>
+<div class="sidebar-bk" [class.toggle]="isToggled" (click)="toggleSidebar(isToggled)"></div>
+<div class="sidebar" [class.toggle]="isToggled">
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>
+</div>
+<!--page content-->
+<home></home>

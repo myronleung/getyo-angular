@@ -1,0 +1,105 @@
+html, body{
+  height:100%;
+}
+
+/* Loader */
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #9b59b6;
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+/* font classes */
+.fw3 {
+  font-weight: 300;
+}
+.fw4{
+  font-weight: 400;
+}
+.fw8 {
+  font-weight: 800;
+}
+
+/* structure classes */
+.right{
+  float: right;
+}
+.left{
+  float: left;
+}
+.center-text{
+  text-align: center;
+}
+
+/* Set base background to gray */
+body{
+  background-color: #FBF9F9;
+}
+
+/* Colors */
+.turquoise-bk {background-color: #1abc9c;}
+.turquoise-text{color: #1abc9c;}
+.green-sea-bk {background-color: #16a085;}
+.green-sea-text {color: #16a085;}
+.emerald-bk {background-color: #2ecc71;}
+.emerald-text {color: #2ecc71;}
+.nephritis-bk {background-color: #27ae60;}
+.nephritis-text {color: #27ae60;}
+.peter-river-bk {background-color: #3498db;}
+.peter-river-text {color: #3498db;}
+.belize-hole-bk {background-color: #2980b9;}
+.belize-hole-text {color: #2980b9;}
+.amethyst-bk {background-color: #9b59b6;}
+.amethyst-text {color: #9b59b6;}
+.wisteria-bk {background-color: #8e44ad;}
+.wisteria-text {color: #8e44ad;}
+.wet-asphalt-bk {background-color: #34495e;}
+.wet-asphalt-text {color: #34495e;}
+.midnight-blue-bk {background-color: #2c3e50;}
+.midnight-blue-text {color: #2c3e50;}
+.sun-flower-bk {background-color: #f1c40f;}
+.sun-flower-text {color: #f1c40f;}
+.orange-bk {background-color: #f39c12;}
+.orange-text {color: #f39c12;}
+.carrot-bk {background-color: #e67e22;}
+.carrot-text {color: #e67e22;}
+.pumpkin-bk {background-color: #d35400;}
+.pumpkin-text {color: #d35400;}
+.alizarin-bk {background-color: #e74c3c;}
+.alizarin-text {color: #e74c3c;}
+.pomegranate-bk {background-color: #c0392b;}
+.pomegranate-text {color: #c0392b;}
+.clouds-bk {background-color: #ecf0f1;}
+.clouds-text {color: #ecf0f1;}
+.silver-bk {background-color: #bdc3c7;}
+.silver-text {color: #bdc3c7;}
+.concrete-bk {background-color: #95a5a6;}
+.concrete-text {color: #95a5a6;}
+.asbestos-bk {background-color: #7f8c8d;}
+.asbestos-text {color: #7f8c8d;}
+.white-bk {background-color: white;}
+.white-text {color: white;}
+.gray-bk {background-color: #FBF9F9;}

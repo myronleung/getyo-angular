@@ -1,0 +1,18 @@
+{
+  "UserProfile":[
+    {"id":1,"name":"Myron Leung","first_name":"Myron","last_name":"Leung","gender":"male","birthday":"10/02/1994","about":"I am a GetYO Developer! Hope you like the app!","motto":"Be Optimistic"},
+    {"id":2,"name":"Shulin Chen","first_name":"Shulin","last_name":"Chen","gender":"female","birthday":"1/05/1996","about":"I am a Penn State student whoe is passionate about entrepreneurship","motto":"Just Do It"},
+    {"id":3,"name":"Mason Leung","first_name":"Mason","last_name":"Leung","gender":"male","birthday":"1/04/2003","about":"I am a middle school student","motto":"wut..."}
+  ],
+  "Question":[
+    {"id":1,"author":1,"author_name":"Myron Leung","question_text":"Django, Ruby on Rails, or NodeJS?","description":"I'm looking for a back end web development framework and I don't know what to choose.","pub_date":"8/24/2016","total_votes":42,"total_comments":64},
+    {"id":2,"author":2,"author_name":"Myron Leung","question_text":"Puppies or Kittens?","description":"","pub_date":"8/25/2016","total_votes":13,"total_comments":5}
+  ],
+  "Choice":[
+    {"id":1,"question":1,"choice_text":"Django","votes":23,"percentage":54},
+    {"id":2,"question":1,"choice_text":"Ruby on Rails","votes":10,"percentage":24},
+    {"id":3,"question":1,"choice_text":"NodeJS","votes":9,"percentage":22},
+    {"id":4,"question":2,"choice_text":"Puppies","votes":12,"percentage":92},
+    {"id":5,"question":2,"choice_text":"Kittens","votes":1,"percentage":8}
+  ]
+}

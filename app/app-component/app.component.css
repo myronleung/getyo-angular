@@ -1,0 +1,127 @@
+/* navbar components */
+.nav{
+  height: 50px;
+  color: white;
+}
+.nav-wrapper{
+  padding:0px 10px;
+  float: right;
+}
+.nav-wrapper > li{
+  height: 50px;
+  line-height:50px;
+  list-style-type: none;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0px 10px 0px 10px;
+  font-weight: 300;
+}
+.nav-wrapper :hover{
+  /*background-color: rgba(255,255,255,.2);*/
+  background-color: rgba(0,0,0,.1);
+}
+.nav-wrapper > li :hover{
+  background-color: unset;
+}
+.nav-wrapper > li > a > i {
+  line-height: 50px;
+  vertical-align: middle;
+}
+.nav-wrapper > li > a {
+  color: white;
+}
+.brand{
+  font-weight: 800 !important;
+  font-size: 24px;
+  background-color: #f39c12;
+  padding: 0px 30px 0px 30px !important;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.brand > a{
+  color: white;
+}
+.nav-search{
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  display: inline-block;
+  padding-left: 25px;
+}
+.nav-search > input {
+  padding-left: 15px;
+  background-color: #9b59b6;
+  border: none;
+  height: 36px;
+
+}
+input:focus { outline: none; }
+
+.m-nav{
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .full-nav{
+    display: none;
+  }
+  .m-nav{
+    display: block;
+  }
+}
+
+/* mobile navigation */
+.m-brand{
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 50px;
+  vertical-align: middle;
+  text-align: center;
+}
+.m-brand > a{
+  color: white;
+}
+.hamburger {
+  line-height: 50px;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+.hamburger > p{
+  color: white;
+}
+.sidebar{
+  display: block;
+  position: relative;
+  background-color: white;
+  width: 250px;
+  height: 100%;
+  border-color: #95a5a6;
+  border-width: 2px;
+  animation-duration: 1s;
+  animation-name: slideRightEntrance;
+}
+.sidebar > ul {
+  padding-left: 0px;
+}
+.sidebar > ul > li {
+  padding: 10px 0px 10px 20px;
+  list-style-type: none;
+}
+
+.toggle{
+  display: none;
+}
+.sidebar-bk{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+}
+
+@keyframes slideRightEntrance {
+  0% {left:-250px;}
+  100% {left:0px;}
+}
