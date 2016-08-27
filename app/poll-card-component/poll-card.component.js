@@ -20,7 +20,7 @@ var PollCard = (function () {
         var width = document.querySelector(".card").offsetWidth;
         //  console.log("width: "+width);
         this.height = width * this.imageRatio;
-        //  console.log("height: "+this.height)
+        console.log("height: " + this.height);
     };
     __decorate([
         core_1.Input(), 
