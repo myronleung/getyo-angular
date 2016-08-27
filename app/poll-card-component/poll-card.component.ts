@@ -23,10 +23,10 @@ export class PollCard{
   ngOnInit(){
     this.imageRatio = 0.625;
   }
-  ngAfterViewInit(){
+  ngAfterViewChecked(){
      var width = document.querySelector(".card").offsetWidth
-     console.log("width: "+width);
+    //  console.log("width: "+width);
      this.height = width*this.imageRatio
-     console.log("height: "+this.height)
+    //  console.log("height: "+this.height)
   }
 }

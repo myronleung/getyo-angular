@@ -16,11 +16,11 @@ var PollCard = (function () {
     PollCard.prototype.ngOnInit = function () {
         this.imageRatio = 0.625;
     };
-    PollCard.prototype.ngAfterViewInit = function () {
+    PollCard.prototype.ngAfterViewChecked = function () {
         var width = document.querySelector(".card").offsetWidth;
-        console.log("width: " + width);
+        //  console.log("width: "+width);
         this.height = width * this.imageRatio;
-        console.log("height: " + this.height);
+        //  console.log("height: "+this.height)
     };
     __decorate([
         core_1.Input(), 
